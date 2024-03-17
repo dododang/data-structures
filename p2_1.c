@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int length(char str[]);
+
+int main(void)
+{
+	char str[100];
+	int a;
+	printf("문자열을 입력하세요 : ");
+	scanf_s("%s", str, sizeof(str));
+	a = length(str);
+	printf("입력된 문자열은\n%s\n입니다.\n", str);
+	printf("입력된 문자열의 길이 = %d \n", a);
+
+	return 0;
+}
+
+int length(char str[])
+{
+	int i, a;
+	a = 0;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		a++;
+	}
+	return a;
+}
