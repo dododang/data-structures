@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(void)
+{
+	char *ptr[4] = {"Korea", "Seoul", "Mapo", "152번지 2/3"};
+	char *potr[4] = { "Korea", "Seoul", "Jongno", "152번지 2/3" };
+
+	printf("%s\n", ptr[0]);
+	printf("%s\n", ptr[1]);
+	printf("%s\n", ptr[2]);
+	printf("%s\n\n", ptr[3]);
+	printf("%s\n", potr[0]);
+	printf("%s\n", potr[1]);
+	printf("%s\n", potr[2]);
+	printf("%s", potr[3]);
+
+	return 0;
+}
