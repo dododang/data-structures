@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void move(int disk, char start, char target) {
+    printf("%c에서 원반%d를(을) %c로 옮김\n", start, disk, target);
+}
+
+void hanoi(int n, char start, char work, char target) {
+    if (n == 1) {
+        move(1, start, target);
+        return;
+    }
+    hanoi(n - 1, start, target, work);
+    move(n, start, target);
+    hanoi(n - 1, work, start, target);
+}
+
+int main() {
+    int n = 3;
+    hanoi(n, 'A', 'B', 'C');
+    return 0;
+}
