@@ -6,22 +6,22 @@
 int main(void) {
 	linkedList_h* L;
 	L = createLinkedList_h();
-	printf("(1) °ø¹é ¸®½ºÆ® »ı¼ºÇÏ±â! \n");
+	printf("(1) ê³µë°± ë¦¬ìŠ¤íŠ¸ ìƒì„±í•˜ê¸°! \n");
 	printList(L);
 
-	printf("\n(2) ¸®½ºÆ®¿¡ [¼ö] ³ëµå »ğÀÔÇÏ±â! \n");
-	insertFirstNode(L, "¼ö");
+	printf("\n(2) ë¦¬ìŠ¤íŠ¸ì— [ìˆ˜] ë…¸ë“œ ì‚½ì…í•˜ê¸°! \n");
+	insertFirstNode(L, "ìˆ˜");
 	printList(L);
 
-	printf("\n(3) ¸®½ºÆ® ¸¶Áö¸·¿¡ [±İ] ³ëµå »ğÀÔÇÏ±â! \n");
-	insertLastNode(L, "±İ");
+	printf("\n(3) ë¦¬ìŠ¤íŠ¸ ë§ˆì§€ë§‰ì— [ê¸ˆ] ë…¸ë“œ ì‚½ì…í•˜ê¸°! \n");
+	insertLastNode(L, "ê¸ˆ");
 	printList(L);
 
-	printf("\n(4) ¸®½ºÆ® Ã¹ ¹ø¤Š¿¡ [¿ù] ³ëµå »ğÀÔÇÏ±â! \n");
-	insertFirstNode(L, "¿ù");
+	printf("\n(4) ë¦¬ìŠ¤íŠ¸ ì²« ë²ˆì§¸ì— [ì›”] ë…¸ë“œ ì‚½ì…í•˜ê¸°! \n");
+	insertFirstNode(L, "ì›”");
 	printList(L);
 
-	printf("\n(5) ¸®½ºÆ® °ø°£À» ÇØÁ¦ÇÏ¿© °ø¹é ¸®½ºÆ®·Î ¸¸µé±â! \n");
+	printf("\n(5) ë¦¬ìŠ¤íŠ¸ ê³µê°„ì„ í•´ì œí•˜ì—¬ ê³µë°± ë¦¬ìŠ¤íŠ¸ë¡œ ë§Œë“¤ê¸°! \n");
 	freeLinkedList_h(L);
 	printList(L);
 
