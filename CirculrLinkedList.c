@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "CircularLinkedList.h"
 
 linkedList_h* createLinkedList_h(void) {
@@ -88,4 +89,4 @@ listNode* searchNode(linkedList_h* CL, char* x) {
 		else temp = temp->link;
 	} while (temp != CL->head);
 	return NULL;
-	}
+}
