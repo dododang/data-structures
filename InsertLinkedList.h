@@ -1,17 +1,18 @@
 #pragma once
-	//´Ü¼ø ¿¬°á ¸®½ºÆ®ÀÇ ³ëµå ±¸Á¶¸¦ ±¸Á¶Ã¼·Î Á¤ÀÇ
+//ë‹¨ìˆœ ì—°ê²° ë¦¬ìŠ¤íŠ¸ì˜ ë…¸ë“œ êµ¬ì¡°ë¥¼ êµ¬ì¡°ì²´ë¡œ ì •ì˜
 typedef struct ListNode {
 	char data[4];
 	struct ListNode* link;
 } listNode;
 
+// ë¦¬ìŠ¤íŠ¸ì˜ ì‹œì‘ì„ ë‚˜íƒ€ë‚´ëŠ”head ë…¸ë“œë¥¼ êµ¬ì¡°ì²´ë¡œ ì •ì˜
 typedef struct {
 	listNode* head;
 } linkedList_h;
 
 linkedList_h* createLinkedList_h(void);
 void freeLinkedList_h(linkedList_h* L);
-void printList(linkedList_h * L);
-void insertFirstNode(linkedList_h * L, char* x);
-void insertMiddleNode(linkedList_h * L, listNode * pre, char* x);
-void insertLastNode(linkedList_h * L, char* x);
+void printList(linkedList_h* L);
+void insertFirstNode(linkedList_h* L, char* x);
+void insertMiddleNode(linkedList_h* L, listNode* pre, char* x);
+void insertLastNode(linkedList_h* L, char* x);
