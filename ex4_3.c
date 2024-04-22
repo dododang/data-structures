@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h
 #include "CircularLinkedList.h"
 
 int main(void) {
@@ -5,23 +7,23 @@ int main(void) {
 	listNode* p;
 
 	CL = createLinkedList_h();
-	printf("(1) ¿øÇü ¿¬°á ¸®½ºÆ® »ý¼ºÇÏ±â! \n");
+	printf("(1) ì›í˜• ì—°ê²° ë¦¬ìŠ¤íŠ¸ ìƒì„±í•˜ê¸°! \n");
 	printList(CL);
 
-	printf("\n(2) ¿îÇü ¿¬°á ¸®½ºÆ®¿¡ [¿ù] ³ëµå »ðÀÔÇÏ±â! \n");
-	insertFirstNode(CL, "¿ù");
+	printf("\n(2) ìš´í˜• ì—°ê²° ë¦¬ìŠ¤íŠ¸ì— [ì›”] ë…¸ë“œ ì‚½ìž…í•˜ê¸°! \n");
+	insertFirstNode(CL, "ì›”");
 	printList(CL);
 
-	printf("\n(3) ¿øÇü ¿¬°á ¸®½ºÆ®ÀÇ [¿ù] ³ëµå µÚ¿¡ [¼ö] ³ëµå »ðÀÔÇÏ±â! \n");
-	p = searchNode(CL, "¿ù");	insertMiddleNode(CL, p, "¼ö");
+	printf("\n(3) ì›í˜• ì—°ê²° ë¦¬ìŠ¤íŠ¸ì˜ [ì›”] ë…¸ë“œ ë’¤ì— [ìˆ˜] ë…¸ë“œ ì‚½ìž…í•˜ê¸°! \n");
+	p = searchNode(CL, "ì›”");	insertMiddleNode(CL, p, "ìˆ˜");
 	printList(CL);
 
-	printf("\n(4) ¿øÇü ¿¬°á ¸®½ºÆ®ÀÇ [¼ö] ³ëµå µÚ¿¡ [±Ý] ³ëµå »ðÀÔÇÏ±â! \n");
-	p = searchNode(CL, "¼ö");	insertMiddleNode(CL, p, "±Ý");
+	printf("\n(4) ì›í˜• ì—°ê²° ë¦¬ìŠ¤íŠ¸ì˜ [ìˆ˜] ë…¸ë“œ ë’¤ì— [ê¸ˆ] ë…¸ë“œ ì‚½ìž…í•˜ê¸°! \n");
+	p = searchNode(CL, "ìˆ˜");	insertMiddleNode(CL, p, "ê¸ˆ");
 	printList(CL);
 
-	printf("\n(5) ¿øÇü ¿¬°á ¸®½ºÆ®¿¡¼­ [¼ö] ³ëµå »èÁ¦ÇÏ±â! \n");
-	p = searchNode(CL, "¼ö");	deleteNode(CL, p);
+	printf("\n(5) ì›í˜• ì—°ê²° ë¦¬ìŠ¤íŠ¸ì—ì„œ [ìˆ˜] ë…¸ë“œ ì‚­ì œí•˜ê¸°! \n");
+	p = searchNode(CL, "ìˆ˜");	deleteNode(CL, p);
 	printList(CL);		getchar();
 	return 0;
 }
