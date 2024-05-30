@@ -35,10 +35,10 @@ int main(void) {
     insertEdge(G9, 6, 4);
     insertEdge(G9, 6, 3);
 
-    printf("\n G9ÀÇ ÀÎÁ¢ ¸®½ºÆ® ");
+    printf("\n G9ì˜ ì¸ì ‘ ë¦¬ìŠ¤íŠ¸ ");
     print_adjList(G9);
 
-    printf("\n\n///////////////\n\n±íÀÌ ¿ì¼± Å½»ö >> ");
+    printf("\n\n///////////////\n\nê¹Šì´ ìš°ì„  íƒìƒ‰ >> ");
     DFS_adjList(G9, 0);
 
     free(G9);
